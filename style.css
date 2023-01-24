@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--backgroundColor: #282C33;
+	--primaryColor: #C778DD;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: var(--backgroundColor);
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-direction: column;
+	height: 100vh;
+	color: white;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+	text-align: center;
+	background-repeat: no-repeat;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+#container {
+	background-color: var(--backgroundColor);
+	border: 3px solid var(--primaryColor);
+	width: 500px;
+	font-size: 30px;
+	margin: auto;
+}
+
+#containerScore {
+	border-bottom: 3px solid var(--primaryColor);
+}
+
+#containerQuestion {
+	padding: 25px 10px;
+}
+
+#containerInput {
+	
+}
+
+#containerInput input{
+	width: 100%;
+	padding: 20px 10px;
+	box-sizing: border-box;
+	background-color: var(--primaryColor);
+	border: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bolder;
+	font-size: 30px;
+	letter-spacing: 2px;
+	color: rgba(40, 44, 51, .3);	
+}
+
+#containerInput input::-webkit-input-placeholder{
+	color: rgba(40, 44, 51, .3);	
+}
+
+input:focus {
+ 	outline-color: none;
+}
+#containerAnswer {
+	padding: 20px 70px;
+}
+
+#containerAnswer p {
+	border: 3px solid var(--primaryColor);
+	cursor: pointer;
+/*	transition: all ease-in-out .2s;*/
+}
+
+#containerAnswer p:hover {
+	background-color: var(--primaryColor);
+}
+
+@media only screen and (max-width: 576px) {
+	body #container {
+		font-size: 20px;
+		width: 400px;
+	}
+	#containerInput input{
+		font-size: 20px;	
+	}
+}
